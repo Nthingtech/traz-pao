@@ -7,9 +7,6 @@
     {! SEO do Roq: gera <title>, description, Open Graph, Twitter a partir do FrontMatter !}
     {#seo page site /}
 
-    {! Favicon !}
-    <link href="{=site.image('favicon.ico')}" rel="icon">
-
     {! Google Web Fonts !}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +17,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     {! Libs de estilo (servidas de public/) !}
-    <link href="{site.url.resolve('lib/animate/animate.min.css')}" rel="stylesheet">
-    <link href="{site.url.resolve('lib/owlcarousel/assets/owl.carousel.min.css')}" rel="stylesheet">
+    <link href="{site.file('lib/animate/animate.min.css')}" rel="stylesheet">
+    <link href="{site.file('lib/owlcarousel/assets/owl.carousel.min.css')}" rel="stylesheet">
 
     {! Bootstrap customizado + estilo do template !}
-    <link href="{site.url.resolve('css/bootstrap.min.css')}" rel="stylesheet">
-    <link href="{site.url.resolve('css/style.css')}" rel="stylesheet">
+    <link href="{site.file('css/bootstrap.min.css')}" rel="stylesheet">
+    <link href="{site.file('css/style.css')}" rel="stylesheet">
 </head>
 
 <body>
@@ -49,13 +46,13 @@
     {! JavaScript Libraries (mantidas fiéis: jQuery + Bootstrap + Owl + WOW) !}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{site.url.resolve('lib/wow/wow.min.js')}"></script>
-    <script src="{site.url.resolve('lib/easing/easing.min.js')}"></script>
-    <script src="{site.url.resolve('lib/waypoints/waypoints.min.js')}"></script>
-    <script src="{site.url.resolve('lib/counterup/counterup.min.js')}"></script>
-    <script src="{site.url.resolve('lib/owlcarousel/owl.carousel.min.js')}"></script>
+    <script src="{site.file('lib/wow/wow.min.js')}"></script>
+    <script src="{site.file('lib/easing/easing.min.js')}"></script>
+    <script src="{site.file('lib/waypoints/waypoints.min.js')}"></script>
+    <script src="{site.file('lib/counterup/counterup.min.js')}"></script>
+    <script src="{site.file('lib/owlcarousel/owl.carousel.min.js')}"></script>
 
     {! JS do template !}
-    <script src="{site.url.resolve('js/main.js')}"></script>
+    <script src="{site.file('js/main.js')}"></script>
 </body>
 </html>
