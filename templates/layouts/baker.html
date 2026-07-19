@@ -2,43 +2,60 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, inital-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    {#-- SEO do Roq: gera <title>, description, Open Graph, Twitter a partir do FrontMatter --}
-    {#seo page site/}
+    {! SEO do Roq: gera <title>, description, Open Graph, Twitter a partir do FrontMatter !}
+    {#seo page site /}
 
-    {#-- Favicon --}
+    {! Favicon !}
     <link href="{=site.image('favicon.ico')}" rel="icon">
 
-    {#-- Google Web Fonts --}
+    {! Google Web Fonts !}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    {#-- Ícones --}
+    {! Ícones !}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    {#-- Libs de estilo (servidas de public/) --}
+    {! Libs de estilo (servidas de public/) !}
     <link href="/lib/animate/animate.min.css" rel="stylesheet">
     <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    {#-- Bootstrap customizado + estilo do template --}
+    {! Bootstrap customizado + estilo do template !}
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    {#-- Spinner --}
+    {! Spinner !}
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-grow text-primary" role="status"></div>
     </div>
 
-    {#-- Topbar + Navbar reutilizáveis --}
+    {! Topbar + Navbar reutilizáveis !}
     {#include partials/navbar /}
 
-    {#-- Aqui entra o conteúdo específico de cada página --}
+    {! Aqui entra o conteúdo específico de cada página !}
     {#insert /}
 
+    {! Footer reutilizável !}
+    {#include partials/footer /}
+
+    {! Back to top !}
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    {! JavaScript Libraries (mantidas fiéis: jQuery + Bootstrap + Owl + WOW) !}
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    {! JS do template !}
+    <script src="/js/main.js"></script>
 </body>
 </html>

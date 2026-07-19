@@ -1,4 +1,4 @@
-{#-- Footer --}
+{! Footer !}
 <div class="container-fluid footer bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
     <div class="container py-5">
         <div class="row g-5">
@@ -45,16 +45,18 @@
     </div>
 </div>
 
-{#-- Copyright (mantido o crédito ThemeWagon/HTML Codex, exigido pela licença gratuita) --}
+{! Copyright (mantido o crédito ThemeWagon/HTML Codex, exigido pela licença gratuita) !}
 <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a href="#">{=site.title ?? 'Your Site Name'}</a>, All Right Reserved.
+                &copy; <a href="#">{site.title ?: 'TRAZ PÃO'}</a>, All Right Reserved.
             </div>
-            <div class="col-md-6 text-center text-md-end">
-                Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                <div class="text-start">
+                    Desenvolvido por <a href="https://udq.com.br" target="_blank">UDQ - Software House</a>
+                    <br>Designed By <a href="https://htmlcodex.com">HTML Codex</a> · Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
             </div>
         </div>
     </div>
