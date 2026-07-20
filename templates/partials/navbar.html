@@ -4,13 +4,13 @@
         <div class="col-lg-6 px-5 text-start">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a class="small text-light" href="{=site.url('/')}">Home</a></li>
-                <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
-                <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
-                <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
+                <li class="breadcrumb-item"><a class="small text-light" href="#">Carreira</a></li>
+                <li class="breadcrumb-item"><a class="small text-light" href="#">Termos</a></li>
+                <li class="breadcrumb-item"><a class="small text-light" href="#">Privacidade</a></li>
             </ol>
         </div>
         <div class="col-lg-6 px-5 text-end">
-            <small>Follow us:</small>
+            <small>Siga-Nos:</small>
             <div class="h-100 d-inline-flex align-items-center">
                 <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
@@ -33,14 +33,14 @@
         <div class="navbar-nav mx-auto p-4 p-lg-0">
             {! 'active' é resolvido comparando com page.data.active-nav definido em cada página !}
             <a href="{=site.url('/')}" class="nav-item nav-link {#if page.data.active-nav == 'home'}active{/if}">Home</a>
-            <a href="{=site.url('/about')}" class="nav-item nav-link {#if page.data.active-nav == 'about'}active{/if}">About</a>
-            <a href="{=site.url('/service')}" class="nav-item nav-link {#if page.data.active-nav == 'service'}active{/if}">Services</a>
-            <a href="{=site.url('/product')}" class="nav-item nav-link {#if page.data.active-nav == 'product'}active{/if}">Products</a>
+            <a href="{=site.url('/about')}" class="nav-item nav-link {#if page.data.active-nav == 'about'}active{/if}">Sobre</a>
+            <a href="{=site.url('/service')}" class="nav-item nav-link {#if page.data.active-nav == 'service'}active{/if}">Serviços</a>
+            <a href="{=site.url('/product')}" class="nav-item nav-link {#if page.data.active-nav == 'product'}active{/if}">Produtos</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
-                    <a href="{=site.url('/team')}" class="dropdown-item">Our Team</a>
-                    <a href="{=site.url('/testimonial')}" class="dropdown-item">Testimonial</a>
+                    <a href="{=site.url('/team')}" class="dropdown-item">Nosso Time!</a>
+                    <a href="{=site.url('/testimonial')}" class="dropdown-item">Depoimentos</a>
                 </div>
             </div>
             <a href="{=site.url('/contact')}" class="nav-item nav-link {#if page.data.active-nav == 'contact'}active{/if}">Contact</a>
@@ -50,8 +50,8 @@
                 <i class="fa fa-phone text-primary"></i>
             </div>
             <div class="ps-3">
-                <small class="text-primary mb-0">Call Us</small>
-                <p class="text-light fs-5 mb-0">+012 345 6789</p>
+                <small class="text-primary mb-0">Ligue Para Nós!</small>
+                <p class="text-light fs-5 mb-0">11 11111 1111</p>
             </div>
         </div>
     </div>
